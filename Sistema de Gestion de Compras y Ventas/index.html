@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Inventario de Ventas y Compras</title>
+</head>
+<body>
+    <h1>Sistema de Gestión de Inventario de Ventas y Compras</h1>
+
+    <h2>PRODUCTOS</h2>
+    <form id="form-productos">
+        <input type="text" id="articulo" placeholder="Artículo" required>
+        <input type="number" id="codigo" placeholder="Código" required>
+        <input type="number" id="entrada" placeholder="Entrada" required>
+        <input type="number" id="salida" placeholder="Salida" required>
+        <input type="number" id="stock-inicial" placeholder="Stock inicial" required>
+        <button type="submit">Agregar</button> <br><br>
+    </form>
+    <div class="container"></div>
+    <table border="1px" width="60%" style="background-color: rgb(250, 85, 140);" id="tabla-inventario">
+        <thead>
+            <tr>
+                <th width="20%">Artículo</th>
+                <th width="20%">Código</th>
+                <th width="20%">Entrada</th>
+                <th width="20%">Salida</th>
+                <th width="20%">Stock</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-productos"></tbody>
+    </table>
+
+    <h2>ENTRADAS</h2>
+    <form id="form-entradas">
+        <input type="text" id="articulo-entrada" placeholder="Artículo" required>
+        <input type="number" id="codigo-entrada" placeholder="Código" required>
+        <input type="date" id="fecha-entrada" placeholder="Fecha" required>
+        <input type="number" id="cantidad-entrada" placeholder="Cantidad" required>
+        <button type="submit">Agregar</button> <br><br>
+    </form>
+    <div class="container"></div>
+    <table border="1px" width="60%" style="background-color: rgb(250, 85, 140);" id="tabla-entradas">
+        <thead>
+            <tr>
+                <th width="20%">Artículo</th>
+                <th width="20%">Código</th>
+                <th width="20%">Fecha</th>
+                <th width="20%">Cantidad</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-entradas"></tbody>
+    </table>
+
+    <h2>SALIDAS</h2>
+    <form id="form-salidas">
+        <input type="text" id="articulo-salida" placeholder="Artículo" required>
+        <input type="number" id="codigo-salida" placeholder="Código" required>
+        <input type="date" id="fecha-salida" placeholder="Fecha" required>
+        <input type="number" id="cantidad-salida" placeholder="Cantidad" required>
+        <button type="submit">Agregar</button> <br><br>
+    </form>
+    <div class="container"></div>
+    <table border="1px" width="60%" style="background-color: rgb(250, 85, 140);" id="tabla-salidas">
+        <thead>
+            <tr>
+                <th width="20%">Artículo</th>
+                <th width="20%">Código</th>
+                <th width="20%">Fecha</th>
+                <th width="20%">Cantidad</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-salidas"></tbody>
+    </table> <br><br>
+
+    <button onclick="cargarArreglo()">Guardar Inventario</button>
+
+    <script src="apps.js" defer></script>
+</body>
+</html>

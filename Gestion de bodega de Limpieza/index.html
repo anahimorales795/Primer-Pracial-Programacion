@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionates</title>
+</head>
+
+<body>
+    <div class="container" width="100%">
+        <h1 style="text-align: center;">GESTION DE REGISTRO</h1>
+        <table border="0px" width="50%" style="margin-left: auto;margin-right: auto;">
+            <tr>
+                <td width="40%"><label for="nombre">Nombre Cliente</label></td>
+                <td width=60%><input type="text" placeholder="Ingrese su nombre" id="nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="productos">Nombre del encargado de entrega</label>
+                <td><select name="productos" id="productos" size="1">
+                        <option value="Detergente en polvo">Natalia Berrios</option>
+                        <option value="Detergente en liquido">Daniela lozano</option>
+                        <option value="Escobas">Estefani juarez</option>
+                        <option value="Trapeador">Tomas timotin </option>
+                        <option value="Cepillo">Artemis torrez</option>
+                        </select></td>
+            </tr>
+           
+                <td><label for="productos">Nombre de la entrega del producto</label></td>
+                <td name="productos" id="productos" size="1">
+                        <option value="Detergente en polvo">Detergente en polvo</option>
+                        <option value="Detergente en liquido">Detergente en liquido</option>
+                        <option value="Escobas">Escobas</option>
+                        <option value="Trapeador">Trapeador</option>
+                        <option value="Cepillo">Cepillo</option>
+                        <option value="Javon de mano litro">Javon de mano litro</option>
+                        <option value="jabon de barra">jabon de barra</option>
+                        <option value="pastilla de baño">pastilla de baño</option>
+                    </td>
+            
+            <tr>
+                <td><label for="tipo de pago">tipo de pago</label></td>
+                <td>
+                    <input type="radio" id="presencial" name="tipo de pago" value="Efectivo">
+                    <label for="Efectivo">Efectivo</label>
+                    <input type="radio" id="virtual" name="tipo de pago" value="virtual">
+                    <label for="Tarjeta">Tarjeta</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nota1">Ingrese Precio</label></td>
+                <td><input type="number" id="nota1" placeholder="Ingrese Precio"></td>
+            </tr>
+            <tr>
+                <td><label for="nota2">Ingrese Nota2</label></td>
+                <td><input type="number" id="nota2" placeholder="Ingrese Nota2"></td>
+            </tr>
+            <tr>
+                <td><label for="nota3">Ingrese Nota3</label></td>
+                <td><input type="number" id="nota3" placeholder="Ingrese Nota3"></td>
+            </tr>
+            <tr>
+                <td><label for="nota4">Ingrese Nota4</label></td>
+                <td><input type="number" id="nota4" placeholder="Ingrese Nota4"></td>
+            </tr>
+            <tr>
+                <td><label for="promedio">El promedio alcanzado es:</label></td>
+                <td><input type="text" id="promedio" readonly placeholder="Promedio"></td>
+            </tr>
+            <tr>
+                <td><br><button onclick="Registrar()">Registrar</button></td>
+                <td><br><button onclick="limpiar()">Limpiar</button></td>
+            </tr>
+
+            </tr>
+        </table>
+    </div>
+    <script src="apps.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
